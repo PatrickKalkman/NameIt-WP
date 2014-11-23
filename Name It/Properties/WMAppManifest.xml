@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en" />
+  <Languages xmlns="">
+    <Language code="en" />
+  </Languages>
+  <App xmlns="" ProductID="{27a4e364-5cad-4a02-b08e-5c122ca930a1}" Title="Name It" RuntimeType="Silverlight" Version="1.5.1.0" Genre="apps.normal" Author="Patrick Kalkman" Description="Challenge yourself by trying to recognize soundbites from the Nokia Mixes music library. Play using your favorite genre and try to beat your highest score." Publisher="Patrick Kalkman" PublisherID="{3ba270ee-5ca1-4bb3-8d05-bcce9ffd1168}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="Views/MainPage.xaml" ActivationPolicy="Resume" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="DataBoundToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <Title>Name It</Title>
+          <BackContent>No scores yet!</BackContent>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMediumBack.png</BackBackgroundImageURI>
+          <BackTitle>High scores</BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileLarge.png</LargeBackgroundImageURI>
+          <LargeBackContent>No scores yet, play the game and start scoring!</LargeBackContent>
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileLargeBack.png</LargeBackBackgroundImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
+          </DeviceLockImageURI>
+          <HasLarge>True</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>

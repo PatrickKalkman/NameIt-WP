@@ -1,0 +1,57 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="NameIt.Views.HelpPageView"
+    Style="{StaticResource DefaultPage}"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="{Binding BackgroundImageBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Name It" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Help" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" Margin="12,0,0,0">
+                    Name It challenge your knowledge of music by letting you guess the artist or name of a song. A soundbite of a random song is played after which you have to enter the name of the artist or song."
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Margin="12,24,0,0">
+                        A games is started by choosing a genre. The soundbite starts playing when you press the start button on the game screen. 
+                    </TextBlock>
+                    <Image Source="../Assets/Help-1.png" Height="250" Margin="12,12,0,0"></Image>
+                    <TextBlock TextWrapping="Wrap" Margin="12,12,0,0">
+                        A progressbar will indicate the amount of time left playing the song. 
+                    </TextBlock>
+                    <Image Source="../Assets/Help-2.png" Height="250" Margin="12,12,0,0"></Image>
+                    <TextBlock TextWrapping="Wrap" Margin="12,12,0,0">
+                        When the soundbite finishes the voice recognition will automatically start. You can say the name of the artist or the name of the song.
+                    </TextBlock>
+                    <Image Source="../Assets/Help-3.png" Height="250" Margin="12,12,0,0"></Image>
+                    <TextBlock TextWrapping="Wrap" Margin="12,12,0,0">
+                        When the app recognizes the artist or song the name will be filled in the answer box. By pressing the answer button the app will verify the answer and will give you feedback.
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
