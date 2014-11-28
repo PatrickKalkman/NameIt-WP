@@ -1,5 +1,7 @@
 NameIt-WP
 =========
+[![Build status](https://ci.appveyor.com/api/projects/status/o8vc9f4d36obtauu/branch/master?svg=true)](https://ci.appveyor.com/project/kalkie/nameit-wp)
+<BR/>
 ![Logo](http://cdn.marketplaceimages.windowsphone.com/v8/images/84d8b8cb-7aed-4264-882d-43f1a69ce24f?imageType=ws_icon_large)
 
 A Windows Phone game which let you guess playing songs using speech recognition.
